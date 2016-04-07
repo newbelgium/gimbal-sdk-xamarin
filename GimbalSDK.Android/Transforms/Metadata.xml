@@ -1,0 +1,18 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  
+  <!-- change NamedLoggerBase vis to public -->
+  <attr path="/api/package[@name='org.slf4j.helpers']/class[@name='NamedLoggerBase']" name="visibility">public</attr>
+
+  <!-- change return type on a couple factory getLogger implmentations -->
+  <attr path="/api/package[@name='org.slf4j.impl']/class[@name='AndroidLoggerFactory']/method[@name='getLogger']" name="managedReturn">Org.Slf4j.ILogger</attr>
+  <attr path="/api/package[@name='org.slf4j.impl']/class[@name='ConsoleLoggerFactory']/method[@name='getLogger']" name="managedReturn">Org.Slf4j.ILogger</attr>
+
+  <!-- see additions code for our added overload for Com.Gimbal.Internal.Cache.CacheEntry which just won't be found via this binding process - not sure why -->
+</metadata>
