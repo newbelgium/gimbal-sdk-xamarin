@@ -234,3 +234,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# ios test dev folder for component
+source/gimbalsdk_2.36.1_ios
