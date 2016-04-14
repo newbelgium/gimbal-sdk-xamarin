@@ -51,8 +51,8 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\gimbal.jar" />
-    <InputJar Include="Jars\gimbal-slf4j-impl.jar" />
+    <EmbeddedJar Include="Jars\gimbal.jar" />
+    <EmbeddedJar Include="Jars\gimbal-slf4j-impl.jar" />
     <EmbeddedJar Include="Jars\slf4j-api.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
