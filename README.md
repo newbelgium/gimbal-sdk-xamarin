@@ -10,7 +10,9 @@ All this project really does is show Gimbal configuration and then log Gimbal ev
 The Android bindings.  Build on appropriate OS.  Should not need anything additional other than local Android SDK stuff.
 
 # GimbalSDK.iOS.Sample
-Coming soon.
+A sample project for iOS.  Run after building the iOS binding project since it has a file path reference to the DLL generated from that project.
+
+All this project really does is show Gimbal configuration and then log Gimbal events for beacon sightings and place entries and exits (the UI does nothing).  Be sure to change your CFBundleIdentifier to something you have configured with Gimbal, and then put your Gimbal project API key in the AppDelegate.  
 
 # GimbalSDK.iOS-Unified
 The iOS bindings.  Build on Mac in Xamarin Studio.  Should not need any additional configuration.
@@ -20,3 +22,6 @@ C# translations of classes used for forwarding Gimbal place events to Urban Airs
 
 # source
 Gimbal SDKs kept for reference.  They have already been unpacked into the appropriate places in the projects, so there's nothing to do with them here.
+
+# CONTRIBUTIONS
+Yes, please.  If you have changes let us know, submit a pull request or log a bug.  Thanks!
