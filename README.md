@@ -2,7 +2,7 @@
 Xamarin bindings for the Gimbal SDKs
 
 # GimbalSDK.Android.Sample
-A sample project for Android.  Run after building the Android binding project since it has a file path reference to the DLL generated from that project. Also uses nuget packages for Xamarin.Android.Support.v4, Xamarin.GooglePlayServices.Base, Basement, GCM, and Measurement. 
+A sample project for Android.  Run after building the Android binding project since it has a file path reference to the DLL generated from that project. Also uses nuget packages for Xamarin.Android.Support.v4, Xamarin.GooglePlayServices.Base, Basement, GCM, and Measurement. All this project really does is show Gimbal configuration and then log Gimbal events for beacon sightings and place entries and exits (the UI is just the default Xamarin project UI).  Be sure to change your package name to something you have configured with Gimbal (and optionally Google for GCM), and then put your Gimbal project API key in the MainActivity.
 
 # GimbalSDK.Android
 The Android bindings.  Build on appropriate OS.  Should not need anything additional other than local Android SDK stuff.
